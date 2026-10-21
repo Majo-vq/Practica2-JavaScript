@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Marcas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Marcas</h1>
+        <p>Sistema para el control de asistencia de empleados</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#registro">Formulario de reservación</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido al sistema</h2>
+            <p>
+                Este sitio tiene como objetivo facilitar la organización
+                y el registro de información de manera sencilla.
+            </p>
+        </section>
+
+        <section id="registro">
+            <h2>Formulario de reservación</h2>
+            <p>Complete los siguientes datos del formulario.</p>
+
+            <form id="formulario" novalidate>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre"
+                       required>
+
+                <label for="contacto">Contacto (correo electrónico):</label>
+                <input type="email" id="contacto" name="contacto"
+                       required>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha"
+                       required>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas"
+                       min="1" step="1" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"
+                          rows="4" required></textarea>
+
+                <button type="submit">Enviar información</button>
+
+            </form>
+
+            <div id="mensaje" aria-live="polite"></div>
+
+        </section>
+
+        <section id="informacion">
+            <h2>Sobre el sistema</h2>
+            <p>
+                Registro de Marcas es un proyecto pensado para ayudar
+                a organizar la información relacionada con los
+                empleados y su asistencia laboral.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Registro de Marcas - 2026</p>
+        <p>Proyecto de Ambiente Web Cliente-Servidor</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
